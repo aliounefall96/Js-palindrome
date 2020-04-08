@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>defi</title>
+	<meta charset="utf-8">
+</head>
+<body>
+   <div>
+   	<h3>Saisisser un mot pour voir si c'est un palyndrome</h3>
+   	<form method="">
+   		<input type="text" name="chaine" id="chaine"> <input type="submit" name='valider' onclick="palyndrome();">
+   	</form>
+   </div>
+   <script>
+      function palyndrome(){
+        var  chaine=document.getElementById('chaine').value;
+        var chaineInv=chaine.split('').reverse().join('');
+        if (chaine==chaineInv) {
+           alert(chaine+" est un palyndrome");
+        }
+        else{
+           alert(chaineInv+" n'est pas un palyndrome");
+        }
+      }
+   </script>
+</body>
+</html>
